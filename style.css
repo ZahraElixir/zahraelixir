@@ -9,462 +9,332 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Montserrat',sans-serif;
-
 background:#f6f1e8;
-
-color:#2b241f;
-
+color:#2d241b;
+overflow-x:hidden;
 }
 
 h1,h2,h3{
-
 font-family:'Cormorant Garamond',serif;
-
+font-weight:600;
 }
 
+img{
+max-width:100%;
+display:block;
+}
+
+/* HEADER */
+
 header{
-
 position:fixed;
-
 top:0;
-
+left:0;
 width:100%;
-
 background:rgba(255,255,255,.92);
-
-backdrop-filter:blur(10px);
-
+backdrop-filter:blur(12px);
 z-index:999;
-
-box-shadow:0 2px 10px rgba(0,0,0,.05);
-
+box-shadow:0 2px 12px rgba(0,0,0,.05);
 }
 
 .navbar{
-
 max-width:1400px;
-
 margin:auto;
-
+padding:14px 40px;
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
-padding:15px 40px;
-
 }
 
 .logo-area{
-
 display:flex;
-
 align-items:center;
-
-gap:12px;
-
+gap:15px;
 }
 
 .logo-area img{
-
-height:60px;
-
+height:58px;
 width:auto;
-
 }
 
 .brand h3{
-
-font-size:28px;
-
+font-size:30px;
 letter-spacing:3px;
-
+line-height:1;
 }
 
 .brand span{
-
 font-size:12px;
-
 letter-spacing:2px;
-
+text-transform:uppercase;
 }
 
 .menu{
-
 display:flex;
-
 gap:35px;
-
 }
 
 .menu a{
-
 text-decoration:none;
-
-color:#4d3a25;
-
+color:#4b3926;
 font-weight:500;
-
 transition:.3s;
-
 }
 
-.menu a:hover{
+.menu a:hover
 
-color:#b48b3a;
-
-}
+/* HERO */
 
 .hero{
-
 height:100vh;
-
 background:url("images/hero-image-light.png");
-
 background-size:cover;
-
 background-position:center;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 text-align:center;
-
+padding:0 20px;
 }
 
 .hero-overlay{
-
-background:rgba(255,255,255,.20);
-
-backdrop-filter:blur(3px);
-
-padding:40px;
-
-border-radius:20px;
-
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(4px);
+padding:50px;
+border-radius:24px;
+max-width:800px;
 }
 
 .hero h1{
-
-font-size:5rem;
-
+font-size:6rem;
+line-height:1;
 margin-bottom:20px;
-
+color:#2d241b;
 }
 
 .hero h2{
-
 font-size:2rem;
-
-margin-bottom:15px;
-
-color:#9c7a34;
-
+color:#a88034;
+margin-bottom:20px;
 }
 
 .hero p{
-
 font-size:1.1rem;
-
-margin-bottom:30px;
-
+margin-bottom:35px;
 }
 
 .btn{
-
-background:#b89345;
-
-color:white;
-
-padding:15px 40px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-weight:600;
-
 display:inline-block;
-
+padding:16px 42px;
+background:#b89345;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-
-background:#9d7932;
-
+background:#9b762d;
+transform:translateY(-2px);
 }
 
-.testimonios,
-.content-section{
+/* TESTIMONIOS */
 
-padding:90px 20px;
-
+.testimonios{
+padding:100px 20px;
 text-align:center;
-
 }
 
-.testimonios h2,
-.content-section h2{
-
-font-size:3rem;
-
+.testimonios h2{
+font-size:4rem;
 margin-bottom:40px;
-
+color:#2d241b;
 }
 
-.testimonios img,
-.content-section img{
-
-width:100%;
-
-max-width:1200px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-
+.testimonios img{
+max-width:1400px;
+margin:auto;
+border-radius:24px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
 .legal{
-
-max-width:800px;
-
-margin:25px auto;
-
+margin-top:25px;
 font-size:.85rem;
-
 color:#777;
-
 }
 
+/* RESERVA */
+
 .reserva{
-
 padding:100px 20px;
-
 background:white;
-
 }
 
 .reserva-grid{
-
 max-width:1200px;
-
 margin:auto;
-
 display:grid;
-
 grid-template-columns:1fr 1fr;
-
-gap:60px;
-
+gap:70px;
 align-items:center;
-
 }
 
 .bottle{
-
-width:100%;
-
 max-width:450px;
-
-display:block;
-
 margin:auto;
-
 }
 
 .reserva h2{
-
-font-size:3rem;
-
+font-size:4rem;
 margin-bottom:30px;
-
+color:#2d241b;
 }
 
 form{
-
 display:flex;
-
 flex-direction:column;
-
 gap:15px;
-
 }
 
 input,
 textarea{
-
 padding:16px;
-
 border:1px solid #ddd;
-
-border-radius:10px;
-
+border-radius:12px;
 font-size:15px;
-
+font-family:inherit;
 }
 
 textarea{
-
 height:140px;
-
 resize:none;
-
 }
 
 button{
-
 background:#b89345;
-
-border:none;
-
 color:white;
-
+border:none;
 padding:18px;
-
-border-radius:10px;
-
-cursor:pointer;
-
+border-radius:12px;
 font-size:16px;
-
 font-weight:600;
-
+cursor:pointer;
+transition:.3s;
 }
 
-button:hover{
+button:hover
 
-background:#9d7932;
-
-}
+/* FOOTER */
 
 footer{
-
+background:linear-gradient(
+90deg,
+#2a1f15,
+#3a281a
+);
 padding:60px 20px;
-
 text-align:center;
-
-background:#2d241b;
-
 color:white;
-
 }
 
 .footer-logo{
-
-width:120px;
-
-margin-bottom:20px;
-
+width:140px;
+margin:auto;
+margin-bottom:25px;
 }
 
 .socials{
-
 display:flex;
-
 justify-content:center;
-
-gap:25px;
-
-margin:20px 0;
-
+gap:30px;
+margin-bottom:20px;
 }
 
 .socials a{
-
-color:#d9b260;
-
 font-size:28px;
-
+color:#d9b260;
+transition:.3s;
 }
+
+.socials a:hover{
+transform:translateY(-3px);
+}
+
+footer p{
+font-size:.9rem;
+}
+
+/* SEPARATE PAGES */
+
+.page-image{
+padding-top:140px;
+padding-bottom:80px;
+background:#f6f1e8;
+text-align:center;
+min-height:100vh;
+}
+
+.page-image h1{
+font-size:4rem;
+margin-bottom:40px;
+color:#2d241b;
+}
+
+.page-image img{
+max-width:1200px;
+margin:auto;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* MOBILE */
 
 @media(max-width:900px){
 
 .navbar{
-
 flex-direction:column;
-
 gap:15px;
-
+padding:15px;
 }
 
 .menu{
-
 flex-wrap:wrap;
-
 justify-content:center;
-
 gap:15px;
-
 }
 
 .hero h1{
-
-font-size:3rem;
-
+font-size:3.2rem;
 }
 
 .hero h2{
-
 font-size:1.4rem;
+}
 
+.hero-overlay{
+padding:30px;
+}
+
+.testimonios h2,
+.reserva h2,
+.page-image h1{
+font-size:2.5rem;
 }
 
 .reserva-grid{
-
 grid-template-columns:1fr;
-
-}
-
-.content-section h2,
-.testimonios h2,
-.reserva h2{
-
-font-size:2.3rem;
-
+gap:40px;
 }
 
 .logo-area img{
-
 height:45px;
-
 }
 
+.brand h3{
+font-size:24px;
 }
-.full-image-page{
-
-padding:120px 20px;
-
-background:#f6f1e8;
-
-text-align:center;
-
-}
-
-.full-image-page h2{
-
-font-size:3rem;
-
-margin-bottom:40px;
-
-font-family:'Cormorant Garamond',serif;
-
-}
-
-.full-image-page img{
-
-width:100%;
-
-max-width:1200px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 }

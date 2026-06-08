@@ -88,9 +88,15 @@ transition:.3s;
 
 .hero{
 height:100vh;
-background:url("images/hero-image-light.png");
+background:
+linear-gradient(
+rgba(255,255,255,.45),
+rgba(255,255,255,.45)
+),
+url("images/hero-image-light.png");
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -150,7 +156,6 @@ text-align:center;
 .testimonios h2{
 font-size:4rem;
 margin-bottom:40px;
-color:#2d241b;
 }
 
 .testimonios img{
@@ -190,7 +195,6 @@ margin:auto;
 .reserva h2{
 font-size:4rem;
 margin-bottom:30px;
-color:#2d241b;
 }
 
 form{
@@ -267,7 +271,7 @@ footer p{
 font-size:.9rem;
 }
 
-/* SEPARATE PAGES */
+/* PAGES */
 
 .page-image{
 padding-top:140px;
@@ -280,7 +284,6 @@ min-height:100vh;
 .page-image h1{
 font-size:4rem;
 margin-bottom:40px;
-color:#2d241b;
 }
 
 .page-image img{
@@ -336,5 +339,4 @@ height:45px;
 .brand h3{
 font-size:24px;
 }
-
 }

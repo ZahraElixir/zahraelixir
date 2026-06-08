@@ -32,16 +32,16 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:rgba(255,255,255,.92);
-backdrop-filter:blur(12px);
-z-index:999;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+z-index:9999;
 box-shadow:0 2px 12px rgba(0,0,0,.05);
 }
 
 .navbar{
 max-width:1400px;
 margin:auto;
-padding:14px 40px;
+padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -50,29 +50,30 @@ align-items:center;
 .logo-area{
 display:flex;
 align-items:center;
-gap:15px;
+gap:18px;
 }
 
 .logo-area img{
-height:58px;
+height:60px;
 width:auto;
 }
 
 .brand h3{
-font-size:30px;
-letter-spacing:3px;
+font-size:32px;
+letter-spacing:4px;
 line-height:1;
 }
 
 .brand span{
-font-size:12px;
-letter-spacing:2px;
+font-size:13px;
+letter-spacing:3px;
 text-transform:uppercase;
+color:#6d5a47;
 }
 
 .menu{
 display:flex;
-gap:35px;
+gap:40px;
 }
 
 .menu a{
@@ -82,7 +83,9 @@ font-weight:500;
 transition:.3s;
 }
 
-.menu a:hover
+.menu a:hover{
+color:#b89345;
+}
 
 /* HERO */
 
@@ -90,8 +93,8 @@ transition:.3s;
 height:100vh;
 background:
 linear-gradient(
-rgba(255,255,255,.45),
-rgba(255,255,255,.45)
+rgba(255,255,255,.35),
+rgba(255,255,255,.35)
 ),
 url("images/hero-image-light.png");
 background-size:cover;
@@ -101,38 +104,38 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-padding:0 20px;
+padding:120px 20px 40px;
 }
 
 .hero-overlay{
-background:rgba(255,255,255,.15);
-backdrop-filter:blur(4px);
-padding:50px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(6px);
+padding:60px;
 border-radius:24px;
-max-width:800px;
+max-width:850px;
 }
 
 .hero h1{
-font-size:6rem;
-line-height:1;
-margin-bottom:20px;
+font-size:4.8rem;
+line-height:.95;
+margin-bottom:25px;
 color:#2d241b;
 }
 
 .hero h2{
 font-size:2rem;
-color:#a88034;
+color:#b89345;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:1.1rem;
+font-size:1.15rem;
 margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 42px;
+padding:18px 44px;
 background:#b89345;
 color:white;
 text-decoration:none;
@@ -151,6 +154,7 @@ transform:translateY(-2px);
 .testimonios{
 padding:100px 20px;
 text-align:center;
+background:#f6f1e8;
 }
 
 .testimonios h2{
@@ -229,7 +233,9 @@ cursor:pointer;
 transition:.3s;
 }
 
-button:hover
+button:hover{
+background:#9b762d;
+}
 
 /* FOOTER */
 
@@ -271,7 +277,7 @@ footer p{
 font-size:.9rem;
 }
 
-/* PAGES */
+/* BENEFICIOS / INGREDIENTES / RITUAL PAGES */
 
 .page-image{
 padding-top:140px;
@@ -287,7 +293,7 @@ margin-bottom:40px;
 }
 
 .page-image img{
-max-width:1200px;
+max-width:1400px;
 margin:auto;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -309,8 +315,12 @@ justify-content:center;
 gap:15px;
 }
 
+.hero{
+padding-top:160px;
+}
+
 .hero h1{
-font-size:3.2rem;
+font-size:3rem;
 }
 
 .hero h2{

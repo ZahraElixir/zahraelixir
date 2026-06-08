@@ -437,4 +437,34 @@ height:45px;
 }
 
 }
+.full-image-page{
 
+padding:120px 20px;
+
+background:#f6f1e8;
+
+text-align:center;
+
+}
+
+.full-image-page h2{
+
+font-size:3rem;
+
+margin-bottom:40px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.full-image-page img{
+
+width:100%;
+
+max-width:1200px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
